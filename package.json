@@ -11,7 +11,7 @@
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
-    "deploy": "npx gh-pages -d dist"
+    "deploy": "yarn generate && npx gh-pages -d dist"
   },
   "dependencies": {
     "ant-design-vue": "^1.7.8",
